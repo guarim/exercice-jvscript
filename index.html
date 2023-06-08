@@ -17,12 +17,12 @@
     'use strict';
     
     function Calcule(){
-      var c3=0.785;
+      var c3=1;
       var c1=document.getElementById('chiffre1').value;
       var c2=document.getElementById('chiffre4').value;
       var tt=c1+c2;
       var ttt=tt;
-      var tttt=ttt*1.1;
+      var tttt=ttt*1;
       
       document.getElementById('total').value = parseInt(tt,10);
       document.getElementById('total2').value = parseInt(ttt,10);
@@ -34,9 +34,7 @@
        
       if (tttt > 15 ){
         image.src= "https://media.giphy.com/media/aOften89vRbG/giphy.gif"; 
-      }else {
-        image.src= "https://www.gif-maniac.com/gifs/51/51263.gif" ; 
-      }
+      
     }
  
         
@@ -53,11 +51,11 @@
   <main>
  
     <form name="classification">
-    <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> kWh
+    <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> Note1
     <br/><br/><br/>
-    <div class="chauff"><input class="css-input" type="text" placeholder="Chauffage.." id="total"> kWh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="ECS.." type="text" id="total2"> kWh</div>
+    <div class="chauff"><input class="css-input" type="text" placeholder="Chauffage.." id="total"> Note2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="ECS.." type="text" id="total2"> Note total</div>
     <br/><br/>
-    <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="Surface.." size="7"> m²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> kWh/m²/an</div>
+    <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="Surface.." size="7"> m²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> resultat</div>
     <div class="bienvenue"><img id="imageCalcule" src="" alt="class" /></div>
     </div>
     </form>
