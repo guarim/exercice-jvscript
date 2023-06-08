@@ -4,7 +4,7 @@
   <meta http-equiv="cache-control" content="public, max-age=60">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="PROGRAMME" content="Guarim Mohamed">
+  <meta name="author" content="MG">
   <title>Test</title>
   <style>
     
@@ -22,7 +22,7 @@
       var c2=document.getElementById('chiffre4').value;
       var tt=c1*c3;
       var ttt=c1-tt;
-      var tttt=c1*1;
+      var tttt=tt/c2;
       
       document.getElementById('total').value = parseInt(tt,10);
       document.getElementById('total2').value = parseInt(ttt,10);
@@ -32,10 +32,10 @@
       
       console.log( "tttt = ", tttt );
        
-      if (tttt >= 15){
-        image.src= "https://www.gif-maniac.com/gifs/51/51259.gif"; // "img/mail.png";
+      if (tttt > 15 ){
+        image.src= "https://media.giphy.com/media/aOften89vRbG/giphy.gif"; // "img/mail.png";
       }else {
-        image.src= "https://www.gif-maniac.com/gifs/53/53354.gif" ; // "img/mail1.png";
+        image.src= "http://www.gif-maniac.com/gifs/54/53684.gif" ; // "img/mail1.png";
       }
     }
  
@@ -53,8 +53,11 @@
   <main>
  
     <form name="classification">
-    <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> Note
+    <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> kWh
     <br/><br/><br/>
+    <div class="chauff"><input class="css-input" type="text" placeholder="Chauffage.." id="total"> kWh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="ECS.." type="text" id="total2"> kWh</div>
+    <br/><br/>
+    <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="Surface.." size="7"> m²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> kWh/m²/an</div>
     <div class="bienvenue"><img id="imageCalcule" src="" alt="class" /></div>
     </div>
     </form>
