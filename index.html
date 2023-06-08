@@ -24,9 +24,9 @@
       var ttt=c2+tt;
       var tttt=ttt/c3;
       
-      document.getElementById('total').value = parseInt(tt,10);
-      document.getElementById('total2').value = parseInt(ttt,10);
-      document.getElementById('total3').value = parseInt(tttt,10);
+      document.getElementById('total').value = parseInt(tt,1);
+      document.getElementById('total2').value = parseInt(ttt,1);
+      document.getElementById('total3').value = parseInt(tttt,1);
       
       var image = document.querySelector( "#imageCalcule" );
       
@@ -55,9 +55,9 @@
     <form name="classification">
     <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> maxi-10pts
     <br/><br/><br/>
-    <div class="chauff"><input class="css-input" type="text" placeholder="note-2.." id="total"> kWh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="note.." type="text" id="total2"> maxi-10pts</div>
+    <div class="chauff"><input class="css-input" type="text" placeholder="note-2.." id="total"> PTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="note.." type="text" id="total2"> maxi-10pts</div>
     <br/><br/>
-    <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="bonus.." size="7"> m²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> finale/an</div>
+    <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="bonus.." size="7"> pts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> finale</div>
     <div class="bienvenue"><img id="imageCalcule" src="" alt="class" /></div>
     </div>
     </form>
