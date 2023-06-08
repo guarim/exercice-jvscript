@@ -17,9 +17,10 @@
     'use strict';
     
     function Calcule(){
-      var c3=1;
+      
       var c1=document.getElementById('chiffre1').value;
       var c2=document.getElementById('chiffre4').value;
+      var c3=1;
       var tt=c1*c3;
       var ttt=c2+tt;
       var tttt=ttt/c3;
@@ -32,7 +33,7 @@
       
       console.log( "tttt = ", tttt );
        
-      if (tttt <= 50){
+      if (tttt > 15 ){
         image.src= "https://www.gif-maniac.com/gifs/51/51263.gif"; // "img/mail.png";
       }else {
         image.src= "https://www.gif-maniac.com/gifs/53/53360.gif" ; // "img/mail1.png";
@@ -55,8 +56,7 @@
     <form name="classification">
     <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> maxi-10pts
     <br/><br/><br/>
-    <div class="chauff"><input class="css-input" type="text" placeholder="note-2.." id="total"> kWh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="note.." type="text" id="total2"> maxi-10pts</div>
-    <br/><br/>
+     
     <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="bonus.." size="7"> m²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> finale/an</div>
     <div class="bienvenue"><img id="imageCalcule" src="" alt="class" /></div>
     </div>
