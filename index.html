@@ -30,9 +30,9 @@
       
       var image = document.querySelector( "#imageCalcule" );
       
-      console.log( "tttt = ", tt );
+      console.log( "tt = ", tt );
        
-      if (tttt > 15){
+      if (tt > 15){
         image.src= "https://www.gif-maniac.com/gifs/51/51263.gif"; // "img/mail.png";
       }else {
         image.src= "https://www.gif-maniac.com/gifs/53/53360.gif" ; // "img/mail1.png";
@@ -53,9 +53,11 @@
   <main>
  
     <form name="classification">
-    <input class="css-input" placeholder="Note1… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> maxi-20
+    <input class="css-input" placeholder="Globale… (cf : CAR)" id="chiffre1" onKeyup="Calcule()"/> kWh
     <br/><br/><br/>
-    <div class="chauff"><input class="css-input" type="text" placeholder="note-2.." id="total"> PTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="note.." type="text" id="total"> maxi-20pts</div>
+    <div class="chauff"><input class="css-input" type="text" placeholder="Chauffage.." id="total"> kWh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-input" placeholder="ECS.." type="text" id="total2"> kWh</div>
+    <br/><br/>
+    <div class="chauff"><input class="css-input" type="text" id="chiffre4" onKeyup="Calcule()" placeholder="Surface.." size="7"> m²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class="css-inputc" placeholder="Résultat" type="text" id="total3"> kWh/m²/an</div>
     <div class="bienvenue"><img id="imageCalcule" src="" alt="class" /></div>
     </div>
     </form>
